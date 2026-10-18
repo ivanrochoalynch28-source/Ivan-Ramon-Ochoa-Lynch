@@ -1,2 +1,2 @@
-# Ivan-Ram-n-Ochoa-Lynch
+# Ivan-Ramon-Ochoa-Lynch
 My website
