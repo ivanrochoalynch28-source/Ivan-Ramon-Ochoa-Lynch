@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ivanrochoalynch28-source.github.io/Ivan-Ramon-Ochoa-Lynch/sitemap.xml

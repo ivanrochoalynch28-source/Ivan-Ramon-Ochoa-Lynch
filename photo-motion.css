@@ -1,0 +1,103 @@
+/* Photography direction: calm opening, deeper movement in the personal chapters. */
+.momentum-hero{overflow:clip}
+.momentum-hero-stage{grid-template-columns:.9fr 1fr;gap:80px;align-items:center}
+.momentum-photo{transform:rotate(-1.5deg);margin-top:-20px}
+.momentum-photo .photo-open{height:500px}
+.momentum-photo .photo-open img{object-position:48% 85%}
+.momentum-photo .image-index{right:10px}
+.momentum .photo-open{transform:perspective(1100px) rotateX(var(--photo-rx,0deg)) rotateY(var(--photo-ry,0deg));transform-origin:center;touch-action:pan-y pinch-zoom}
+.momentum .photo-open>img{transform:translate3d(var(--photo-x,0px),var(--photo-y,0px),0) scale(1.06);transition:none;backface-visibility:hidden}
+.momentum .photo.motion-active .photo-open>img{will-change:transform}
+.momentum .photo:not(.opening-photo).will-reveal .photo-open{clip-path:inset(7% 0 7% 0);transition:clip-path 1s cubic-bezier(.2,.7,.2,1)}
+.momentum .photo:not(.opening-photo).will-reveal.is-visible .photo-open{clip-path:inset(0)}
+.momentum .photo-open:focus-visible{outline:2px solid var(--accent);outline-offset:6px}
+html:has(.gallery-dialog[open]){overflow:hidden}
+.momentum .gallery-stage{height:72dvh}
+.momentum .gallery-stage img{transition:opacity .2s ease;opacity:1}
+.momentum .gallery-stage img.is-loading{opacity:0;transition:none}
+.momentum .team-wide .photo-open{border-radius:42% 42% 0 0 / 8% 8% 0 0}
+.momentum .team-wide .photo-open img{aspect-ratio:1.85;object-position:50% 0%}
+.personal-photos{min-width:0}
+.momentum-personal{gap:85px;margin-top:130px}
+.momentum-personal .lake-frame .photo-open img{aspect-ratio:1.5;object-position:50% 55%}
+.momentum-personal .canoe-frame{width:70%;margin:32px 0 0 auto}
+.momentum-personal .canoe-frame .photo-open img{aspect-ratio:1.5;object-position:50% 50%}
+.momentum-personal .photo figcaption{font-size:9px}
+.chess-interlude{display:grid;grid-template-columns:.7fr 1.3fr;gap:85px;align-items:center;margin-top:125px;padding-top:70px;border-top:1px solid var(--line)}
+.chess-note h3{font-family:var(--display);font-weight:500;font-size:clamp(38px,4vw,58px);line-height:1;letter-spacing:-.055em;margin-top:25px}
+.chess-note>p:not(.eyebrow){font-family:var(--reading);font-size:20px;line-height:1.6;color:var(--muted);margin-top:28px;max-width:300px}
+.chess-note .text-link{font-size:11px;margin-top:26px;gap:20px}
+.chess-pair{position:relative;padding-bottom:65px}
+.chess-pair .lantern-frame{width:90%}
+.chess-pair .lantern-frame .photo-open img{aspect-ratio:1.38;object-fit:cover;object-position:50% 60%}
+.chess-pair .childhood-frame{position:relative;width:48%;margin:-65px 0 0 auto;z-index:2;padding:8px;background:#101b36;box-shadow:-12px -12px 35px #080f2620}
+.chess-pair .childhood-frame .photo-open img{aspect-ratio:1.34;object-fit:cover}
+.chess-pair .photo figcaption{font-size:9px}
+.momentum .story-photo.mountain-frame .photo-open img{max-height:650px;aspect-ratio:3/4;object-fit:cover;object-position:50% 100%}
+.momentum .story-photo.teammates-frame .photo-open img{aspect-ratio:1.5;object-fit:cover;object-position:50% 0}
+.momentum .story-photo.lake-frame .photo-open img{aspect-ratio:1.5;object-fit:cover}
+.canoe-companion{width:76%;margin:35px 0 0 auto}
+.momentum .canoe-companion .photo-open img{aspect-ratio:1.5;object-fit:cover}
+.personal-journal{border-top:1px solid var(--line)}
+.personal-journal .section-heading{align-items:end}
+.journal-intro{max-width:310px;font-size:12px;line-height:1.9;color:var(--muted)}
+.journal-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px 80px;align-items:start;margin-top:65px}
+.journal-grid .journal-frame .photo-open img{aspect-ratio:4/3;object-fit:cover}
+.journal-grid .journal-0{grid-column:1;grid-row:1;width:110%;z-index:1}
+.journal-grid .journal-1{grid-column:2;grid-row:1;width:74%;justify-self:end;margin-top:150px}
+.journal-grid .journal-2{width:72%;justify-self:center}
+.journal-grid .journal-2 .photo-open img{aspect-ratio:3/4;object-position:50% 60%}
+.journal-grid .journal-3{align-self:center;margin-top:60px}
+.journal-grid .journal-4{width:90%}
+.journal-grid .journal-5{width:78%;justify-self:end;margin-top:90px}
+@media(min-width:1600px){.momentum-photo .photo-open{height:550px}}
+@media(max-width:1100px) and (min-width:761px){
+ .momentum-hero-stage{gap:45px;grid-template-columns:.85fr 1fr}
+ .momentum-photo .photo-open{height:420px}
+ .momentum-intro>div{gap:18px}
+ .momentum-personal,.chess-interlude{gap:45px}
+ .chess-note .text-link{font-size:10px;gap:10px}
+ .journal-grid{gap:50px 45px}
+}
+@media(max-width:760px){
+ .momentum .gallery-stage{height:68dvh}
+ .momentum-hero-stage{grid-template-columns:1fr;gap:34px}
+ .momentum-photo{margin:0;transform:rotate(-1.5deg)}
+ .momentum-photo .photo-open{height:clamp(350px,105vw,640px)}
+ .momentum-photo .photo-open img{object-position:48% 85%}
+ .momentum-personal{gap:40px;margin-top:75px}
+ .momentum-personal .canoe-frame{width:74%;margin-top:26px}
+ .momentum .team-wide .photo-open img{aspect-ratio:1.5;object-position:50% 0}
+ .momentum .team-wide .photo-open{border-radius:32% 32% 0 0 / 5% 5% 0 0}
+ .chess-interlude{grid-template-columns:1fr;gap:35px;margin-top:75px;padding-top:45px}
+ .chess-note h3{font-size:47px;margin-top:20px}
+ .chess-note>p:not(.eyebrow){font-size:19px;max-width:340px;margin-top:22px}
+ .chess-note .text-link{font-size:11px;margin-top:20px}
+ .chess-pair{padding-bottom:0}
+ .chess-pair .lantern-frame{width:93%}
+ .chess-pair .childhood-frame{width:55%;margin-top:-38px;padding:6px}
+ .momentum .story-photo.mountain-frame .photo-open img{max-height:600px;aspect-ratio:3/4}
+ .canoe-companion{width:76%;margin-top:25px}
+ .personal-journal .section-heading{display:block}
+ .journal-intro{margin-top:25px;font-size:12px}
+ .journal-grid{gap:35px 20px;margin-top:40px}
+ .journal-grid .journal-0{grid-column:1/-1;grid-row:auto;width:100%}
+ .journal-grid .journal-1{grid-column:1/-1;grid-row:auto;width:72%;margin-top:0}
+ .journal-grid .journal-2{width:100%}
+ .journal-grid .journal-3{width:100%;margin-top:60px}
+ .journal-grid .journal-4{grid-column:1/-1;width:85%}
+ .journal-grid .journal-5{grid-column:1/-1;width:78%;margin-top:0}
+ .journal-grid .photo figcaption{font-size:9px;gap:12px}
+}
+@media(max-width:380px){
+ .momentum-name h1{font-size:11.8vw}
+ .momentum-intro>div{gap:15px}
+ .momentum-intro .button-link{gap:14px;padding:12px}
+ .momentum-intro .text-link{font-size:9px;gap:12px}
+}
+@media(prefers-reduced-motion:reduce){
+ .momentum .photo-open{transform:none!important;clip-path:none!important;animation:none!important}
+ .momentum .photo-open>img{transform:none!important;will-change:auto!important}
+ .momentum-photo{transform:none}
+ .hero-orbit{transform:none}
+}
