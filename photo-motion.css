@@ -3,7 +3,7 @@
 .momentum-hero-stage{grid-template-columns:.9fr 1fr;gap:80px;align-items:center}
 .momentum-photo{transform:rotate(-1.5deg);margin-top:-20px}
 .momentum-photo .photo-open{height:500px}
-.momentum-photo .photo-open img{object-position:48% 85%}
+.momentum-photo .photo-open img{object-position:50% 82%}
 .momentum-photo .image-index{right:10px}
 .momentum .photo-open{transform:perspective(1100px) rotateX(var(--photo-rx,0deg)) rotateY(var(--photo-ry,0deg));transform-origin:center;touch-action:pan-y pinch-zoom}
 .momentum .photo-open>img{transform:translate3d(var(--photo-x,0px),var(--photo-y,0px),0) scale(1.06);transition:none;backface-visibility:hidden}
@@ -64,7 +64,7 @@ html:has(.gallery-dialog[open]){overflow:hidden}
  .momentum-hero-stage{grid-template-columns:1fr;gap:34px}
  .momentum-photo{margin:0;transform:rotate(-1.5deg)}
  .momentum-photo .photo-open{height:clamp(350px,105vw,640px)}
- .momentum-photo .photo-open img{object-position:48% 85%}
+ .momentum-photo .photo-open img{object-position:50% 82%}
  .momentum-personal{gap:40px;margin-top:75px}
  .momentum-personal .canoe-frame{width:74%;margin-top:26px}
  .momentum .team-wide .photo-open img{aspect-ratio:1.5;object-position:50% 0}
